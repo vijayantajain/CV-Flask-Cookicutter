@@ -1,0 +1,30 @@
+{
+    "app_name": "my-cv-app",
+    "host_address": "127.0.0.1",
+    "port_address": "5000",
+    "debug_value": "True",
+    "testing_value": "True",
+    "secrety_key": "Random Secret Key",
+
+    "app_main_component": "cv-stuff",
+    "cv_module": "cv_module",
+    "cv_class": "CVClass",
+
+    "input_form_name": "InputForm",
+
+    "app_main_component_blueprint": "flask-main-blueprint",
+    "blueprint_class_name": "blueprint-class-view",
+
+    "model_folder": "model",
+
+    "base_page": "base",
+    "base_html_title": "cv-flask-app",
+    "base_html_heading": "cool-cv-project",
+
+    "form_heading": "complete-form",
+
+
+    "result_page": "cv-result",
+    "result_heading": "cool-cv-project-output"
+
+}
