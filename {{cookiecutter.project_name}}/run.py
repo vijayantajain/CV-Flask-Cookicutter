@@ -2,7 +2,7 @@
 
 import os
 
-from {{cookiecutter.app_name}} import app
+from {{cookiecutter.flask_app_name}} import app
 
 PORT = int(os.environ.get('PORT', "{{cookiecutter.port_address}}"))
 app.run(host='{{cookiecutter.host_address}}', port=PORT)

@@ -1,10 +1,10 @@
-"""Make the {{cookiecutter.app_name}} a flask app"""
+"""Make the {{cookiecutter.flask_app_name}} a flask app"""
 
 import os
 from os import path
 
 from flask import Flask, render_template
-from {{cookiecutter.app_name}}.{{cookiecutter.app_main_component}}.views import {{cookiecutter.app_main_component_blueprint}}
+from {{cookiecutter.flask_app_name}}.{{cookiecutter.flask_app_module}}.views import {{cookiecutter.flask_app_module_blueprint}}
 
 CWD = os.getcwd()
 INSTANCE_PATH = path.join(CWD, 'instance')
@@ -14,7 +14,7 @@ try:
     app.config.from_pyfile('config.py')
 except FileNotFoundError:
     app.config['SECRET_KEY'] = 'Random Secret key'
-app.register_blueprint({{cookiecutter.app_main_component_blueprint}})
+app.register_blueprint({{cookiecutter.flask_app_module_blueprint}})
 
 @app.errorhandler(404)
 def page_not_found(e):

@@ -1,4 +1,4 @@
-# {{cookiecutter.app_name}}
+# {{cookiecutter.project_name}}
 
 
 ## USAGE
