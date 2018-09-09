@@ -1,16 +1,17 @@
 {
     "project_name": "CV Flask BoilerPlate",
-    "flask_app_name": "cv_flask_app",
-    "host_address": "127.0.0.1",
-    "port_address": "5000",
-    "debug_value": "True",
-    "testing_value": "True",
-    "secret_key": "Random Secret Key",
+        "flask_app_name": "cv_flask_app",
+        "host_address": "127.0.0.1",
+        "port_address": "5000",
+        "debug_value": "True",
+        "testing_value": "True",
+        "secret_key": "Random Secret Key",
 
-    "flask_app_module": "cv-stuff",
+        "app_module": "cv_stuff",
+            "module_view": "views",
+            "module_view_blueprint": "cv_stuff_blueprint",
+            "module_cv_module": "detect_foo",
+                "module_cv_class": "FooDetector",
 
-    "flask_app_module_blueprint": "flask-main-blueprint",
-
-    "model_folder": "model"
-
+        "model_folder": "model"
 }

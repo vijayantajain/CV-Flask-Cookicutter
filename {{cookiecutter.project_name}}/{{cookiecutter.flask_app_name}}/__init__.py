@@ -4,7 +4,7 @@ import os
 from os import path
 
 from flask import Flask, render_template
-from {{cookiecutter.flask_app_name}}.{{cookiecutter.flask_app_module}}.views import {{cookiecutter.flask_app_module_blueprint}}
+from {{cookiecutter.flask_app_name}}.{{cookiecutter.app_module}}.{{cookiecutter.module_view}} import {{cookiecutter.module_view_blueprint}}
 
 CWD = os.getcwd()
 INSTANCE_PATH = path.join(CWD, 'instance')
@@ -14,8 +14,4 @@ try:
     app.config.from_pyfile('config.py')
 except FileNotFoundError:
     app.config['SECRET_KEY'] = 'Random Secret key'
-app.register_blueprint({{cookiecutter.flask_app_module_blueprint}})
-
-@app.errorhandler(404)
-def page_not_found(e):
-    return render_template('404.html'), 404
+app.register_blueprint({{cookiecutter.module_view_blueprint}})
